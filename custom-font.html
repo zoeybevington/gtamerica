@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Font Display</title>
+    <style>
+        /* Link to your hosted font files from GitHub */
+        @font-face {
+            font-family: 'MyCustomFont';
+            src: url('https://your-github-username.github.io/your-repo-name/font-file.woff2') format('woff2'),
+                 url('https://your-github-username.github.io/your-repo-name/font-file.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        /* Apply the custom font to all text */
+        body {
+            font-family: 'MyCustomFont', sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            font-size: 48px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Your Custom Font Text</h1>
+    <p>This is a paragraph in your custom font.</p>
+</body>
+</html>
