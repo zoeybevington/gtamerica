@@ -5,30 +5,159 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Custom Font Display</title>
     <style>
-        /* Link to your hosted font files from GitHub */
+        /* Define each font weight and style for GT America */
         @font-face {
-            font-family: 'MyCustomFont';
-            src: url('https://your-github-username.github.io/your-repo-name/font-file.woff2') format('woff2'),
-                 url('https://your-github-username.github.io/your-repo-name/font-file.woff') format('woff');
+            font-family: 'GTAmerica';
+            src: url('GTAmerica-Regular.woff2') format('woff2'),
+                 url('GTAmerica-Regular.woff') format('woff');
             font-weight: normal;
             font-style: normal;
         }
 
-        /* Apply the custom font to all text */
+        @font-face {
+            font-family: 'GTAmerica';
+            src: url('GTAmerica-Bold.woff2') format('woff2'),
+                 url('GTAmerica-Bold.woff') format('woff');
+            font-weight: bold;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'GTAmerica';
+            src: url('GTAmerica-CompressedBold.woff2') format('woff2'),
+                 url('GTAmerica-CompressedBold.woff') format('woff');
+            font-weight: bold;
+            font-style: compressed;
+        }
+
+        @font-face {
+            font-family: 'GTAmerica';
+            src: url('GTAmerica-CompressedRegular.woff2') format('woff2'),
+                 url('GTAmerica-CompressedRegular.woff') format('woff');
+            font-weight: normal;
+            font-style: compressed;
+        }
+
+        @font-face {
+            font-family: 'GTAmerica';
+            src: url('GTAmerica-CompressedThin.woff2') format('woff2'),
+                 url('GTAmerica-CompressedThin.woff') format('woff');
+            font-weight: 100;
+            font-style: compressed;
+        }
+
+        @font-face {
+            font-family: 'GTAmerica';
+            src: url('GTAmerica-CondensedBold.woff2') format('woff2'),
+                 url('GTAmerica-CondensedBold.woff') format('woff');
+            font-weight: bold;
+            font-style: condensed;
+        }
+
+        @font-face {
+            font-family: 'GTAmerica';
+            src: url('GTAmerica-CondensedRegular.woff2') format('woff2'),
+                 url('GTAmerica-CondensedRegular.woff') format('woff');
+            font-weight: normal;
+            font-style: condensed;
+        }
+
+        @font-face {
+            font-family: 'GTAmerica';
+            src: url('GTAmerica-ExtendedBold.woff2') format('woff2'),
+                 url('GTAmerica-ExtendedBold.woff') format('woff');
+            font-weight: bold;
+            font-style: extended;
+        }
+
+        @font-face {
+            font-family: 'GTAmerica';
+            src: url('GTAmerica-ExtendedRegular.woff2') format('woff2'),
+                 url('GTAmerica-ExtendedRegular.woff') format('woff');
+            font-weight: normal;
+            font-style: extended;
+        }
+
+        @font-face {
+            font-family: 'GTAmerica';
+            src: url('GTAmerica-ExtendedThin.woff2') format('woff2'),
+                 url('GTAmerica-ExtendedThin.woff') format('woff');
+            font-weight: 100;
+            font-style: extended;
+        }
+
+        /* Apply different font weights and styles */
         body {
-            font-family: 'MyCustomFont', sans-serif;
+            font-family: 'GTAmerica', sans-serif;
             text-align: center;
             padding: 50px;
         }
 
         h1 {
             font-size: 48px;
+            font-weight: bold;
             color: #333;
+        }
+
+        .compressed-bold {
+            font-family: 'GTAmerica';
+            font-style: compressed;
+            font-weight: bold;
+        }
+
+        .compressed-regular {
+            font-family: 'GTAmerica';
+            font-style: compressed;
+            font-weight: normal;
+        }
+
+        .compressed-thin {
+            font-family: 'GTAmerica';
+            font-style: compressed;
+            font-weight: 100;
+        }
+
+        .condensed-bold {
+            font-family: 'GTAmerica';
+            font-style: condensed;
+            font-weight: bold;
+        }
+
+        .condensed-regular {
+            font-family: 'GTAmerica';
+            font-style: condensed;
+            font-weight: normal;
+        }
+
+        .extended-bold {
+            font-family: 'GTAmerica';
+            font-style: extended;
+            font-weight: bold;
+        }
+
+        .extended-regular {
+            font-family: 'GTAmerica';
+            font-style: extended;
+            font-weight: normal;
+        }
+
+        .extended-thin {
+            font-family: 'GTAmerica';
+            font-style: extended;
+            font-weight: 100;
         }
     </style>
 </head>
 <body>
     <h1>Your Custom Font Text</h1>
-    <p>This is a paragraph in your custom font.</p>
+    <p>This is a paragraph in your regular GT America font.</p>
+    <p class="compressed-bold">This text uses the compressed bold style.</p>
+    <p class="compressed-regular">This text uses the compressed regular style.</p>
+    <p class="compressed-thin">This text uses the compressed thin style.</p>
+    <p class="condensed-bold">This text uses the condensed bold style.</p>
+    <p class="condensed-regular">This text uses the condensed regular style.</p>
+    <p class="extended-bold">This text uses the extended bold style.</p>
+    <p class="extended-regular">This text uses the extended regular style.</p>
+    <p class="extended-thin">This text uses the extended thin style.</p>
 </body>
 </html>
